@@ -1,5 +1,5 @@
 import Logo from "./logo";
-import Nav from "pages/blog";
+import Nav from "components/nav";
 export default function Header() {
   return (
     <header>
