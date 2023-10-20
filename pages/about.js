@@ -1,4 +1,9 @@
-import Hero from "components/hero";
+import Hero from "components/hero"
 export default function About() {
-  return <Hero />;
+  return (
+    <Hero
+      title="CUBE"
+      subtitle="アウトプットしていくサイト"
+      />
+  )
 }
