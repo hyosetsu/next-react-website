@@ -1,9 +1,9 @@
-import Logo from "./logo"
-import Nav from "components/nav"
+import Logo from 'components/logo'
+import Nav from 'components/nav'
 export default function Header() {
   return (
     <header>
-      <Logo />
+      <Logo boxOn />
       <Nav />
     </header>
   )
