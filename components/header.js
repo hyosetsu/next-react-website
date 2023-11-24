@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header>
       <Container large>
-        <div className={styles.flexContainer}>
+        <div className="styles.flexContainer">
           <Logo boxOn />
           <Nav />
         </div>
