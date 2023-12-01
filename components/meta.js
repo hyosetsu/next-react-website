@@ -2,7 +2,7 @@ import Head from "next/head"
 import { useRouter } from "next/router"
 
 // サイトに関する情報
-import { sitaMeta } from "lib/contants"
+import { sitaMeta } from "lib/constants"
 const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } = sitaMeta
 
 // 凡用OGP画像
