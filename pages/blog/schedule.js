@@ -18,8 +18,9 @@ export default function Schedule({
 export async function getStaticProps() {
   const slug = "schedule"
 
-  const post = await getPostBySlug(slug);
-
+  const post = await getPostBySlug(slug)
+  console.log('~~~~~post~~~~~')
+  console.log(post)
   return {
     props: {
       title: post.title,
