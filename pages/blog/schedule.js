@@ -23,11 +23,11 @@ export async function getStaticProps() {
   console.log(post)
   return {
     props: {
-      title: post.title,
-      publish: post.publishDate,
-      content: post.content,
-      eyecatch: post.eyecatch,
-      categories: post.categories,
+      title: post?.title,
+      publish: post?.publishDate,
+      content: post?.content,
+      eyecatch: post?.eyecatch,
+      categories: post?.categories,
     },
   }
 }
