@@ -1,4 +1,6 @@
 import { getPostBySlug } from "lib/api"
+import { extractText } from "lib/extract-text"
+import Meta from "components/meta"
 import Container from "components/container"
 import PostHeader from "components/post-header"
 import PostBody from "components/post-body"
@@ -50,6 +52,7 @@ export async function getStaticProps() {
   const slug = "schedule"
 
   const post = await getPostBySlug(slug)
+  const description = extractText(post.content)
   console.log('~~~~~post~~~~~')
   console.log(post)
   return {
@@ -59,6 +62,7 @@ export async function getStaticProps() {
       content: post.content,
       eyecatch: post.eyecatch,
       categories: post.categories,
+      description: description,
     },
   }
 }
