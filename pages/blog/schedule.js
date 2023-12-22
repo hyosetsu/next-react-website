@@ -15,9 +15,16 @@ export default function Schedule({
   content,
   eyecatch,
   categories,
+  description,
 }) {
   return (
     <Container>
+      <Meta
+        pageTitle={title}
+        pageDesc={description}
+        pageImg={eyecatch.url}
+        pageImgH={eyecatch.height}
+      />
       <article>
         <PostHeader title={title} subtitle="Blog Article" publish={publish} /> 
         
