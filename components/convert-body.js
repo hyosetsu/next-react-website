@@ -13,7 +13,7 @@ export default function ConvertBody({ contentHTML }) {
                         width={width}
                         height={height}
                         alt={alt}
-                        sizes="(min-width: 768px) 768px, 100vm"
+                        sizes="(min-width: 768px) 768px, 100vw"
                     />
                 )
             }
