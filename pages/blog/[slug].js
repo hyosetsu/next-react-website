@@ -17,7 +17,7 @@ import { getPlaiceholder } from "plaiceholder";
 //ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from "lib/constants";
 
-export default function Schedule({
+export default function Post({
   title,
   publish,
   content,
@@ -65,8 +65,15 @@ export default function Schedule({
   );
 }
 
-export async function getStaticProps() {
-  const slug = "schedule";
+export async function getStaticPaths() {
+  return {
+    paths: ['/blog/schedule', '/blog/music', '/blog/micro'],
+    fallback: false,
+  }
+}
+
+export async function getStaticProps(context) {
+  const slug = context.params.slug
 
   const post = await getPostBySlug(slug);
   const description = extractText(post.content);
