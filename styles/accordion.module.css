@@ -61,7 +61,7 @@
 
 @keyframes closeAnim {
     0% {
-        height: auto;
+        height: var(--text-height);
     }
     100% {
         height: 0px;

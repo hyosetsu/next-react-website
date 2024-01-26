@@ -9,12 +9,12 @@ const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } = sitaMet
 import siteImg from '../images/ogp.jpg'
 export default function Meta({ pageTitle, pageDesc, pageImg, pageImgH, pageImgW }) {
     // ページのタイトル
-    const title = pageTitle ? '${pageTitle} | ${siteTitle}' : siteTitle
+    const title = pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle
     //ページの説明
     const desc = pageDesc ?? siteDesc
     // ページのURL
     const router = useRouter()
-    const url = '${siteUrl}${router.asPath}'
+    const url = `${siteUrl}${router.asPath}`
     // OGP画像
     const img = pageImg || siteImg.src
     const imgW = pageImgW || siteImg.width
@@ -23,7 +23,7 @@ export default function Meta({ pageTitle, pageDesc, pageImg, pageImgH, pageImgW 
     return (
         <Head>
             <title>{pageTitle} | {siteTitle}</title>
-            <meta property="og:title" content={'${pageTitle} | ${siteTitle}'} />
+            <meta property="og:title" content={`${pageTitle} | ${siteTitle}`} />
             <meta name="description" content={desc} />
             <meta property="og:description" content={desc} />
             <link rel="canonical" href={url} />

@@ -13,7 +13,7 @@ export default function Accordion({ heading, children }) {
     const refText = useRef(null)
 
     return (
-        <div className={styles.open ? styles.open : styles.close}>
+        <div className={textIsOpen ? styles.open : styles.close}>
             <h3 className={styles.heading}>
                 <button onClick={toggleText}>
                     {heading}
