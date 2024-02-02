@@ -102,7 +102,7 @@ export async function getStaticProps(context) {
     props: {
       title: post.title,
       publish: post.publishDate,
-      content: post.content,
+      content: post?.content,
       eyecatch: eyecatch,
       categories: post.categories,
       description: description,
