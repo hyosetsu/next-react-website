@@ -3,9 +3,10 @@
     .btn {
         display: none;
     }
+
     .list {
-    display: flex;
-    gap: 2em;
+        display: flex;
+        gap: 2em;
     }
 }
 
@@ -22,6 +23,7 @@
         position: relative;
         z-index: 200;
     }
+    
     .close .btn {
         color: var(--gray-75);
     }
@@ -55,6 +57,7 @@
 .close .btn::after {
     transform: translateY(8px);
 }
+
 .open .btn::before {
     transform: rotate(45deg);
 }
@@ -74,6 +77,7 @@
     color: var(--white);
     transition: transform 0.4s;
 }
+
 .open .list {
     transform: translateX(-100%);
 }
@@ -97,6 +101,7 @@
     .list a {
         -webkit-tap-highlight-color: transparent;
     }
+
     .list a:active {
         color: var(--accent);
     }
