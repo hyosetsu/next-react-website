@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main } from 'next/document'
 
 import { siteMeta } from '../lib/constants'
 
@@ -10,7 +10,6 @@ export default function Document() {
       <Head />
       <body>
         <Main />
-        <NextScript />
       </body>
     </Html>
   )
